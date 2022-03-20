@@ -537,6 +537,8 @@ span.material-icons {
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
+    max-width: 1400px;
+    margin: auto    ;
 }
 
 .image_card {
@@ -665,7 +667,7 @@ span.material-icons {
     }
 }
 
-@media (max-width: 1800px) {
+@media (max-width: 2000px) {
     .nav_content {
         padding: 1rem;
     }
