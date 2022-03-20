@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+:root {
+    --primary-color: #1b1b1b;
+    --secondary-color: #FFBF00;
+    --tertiary-color: #F1AC88FF;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    font-family: Arial, Helvetica, sans-serif;    
+    scroll-behavior: smooth;
+    position: relative;
+}
+
+.header {
+    z-index: 10;
+    display: flex;
+    background-color: black;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.primary_nav h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 2.5rem;
+}
+
+.nav_content {
+    width: 1400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nav_container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+.nav_list {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav_link {
+    margin-left: 1rem;
+}
+
+.secondary_nav {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.social-icon {
+    color: #000;
+}
+
+.social-icon:hover {
+    opacity: .5;
+}
+
+.line {
+    display: block;
+    height: 4px;
+    width: 30px;
+    margin: 2px;
+    background-color: var(--primary-color);
+    transition: ease-in-out .75s;
+    border-radius: 15px;
+}
+
+.btnX .line1 {
+  top: 0px;
+  transform: rotateZ(45deg);
+  position: absolute;
+  transition: ease-in-out .75s;
+  }
+
+.btnX .line2 {
+   opacity: 0;
+   background-color: white;
+   transform: translateX(10px);
+   transition: ease-in-out .5s;
+}
+
+.btnX .line3 {
+    width: 30px;
+    transform: rotateZ(-45deg);
+    top: 24;
+    position: absolute;
+    transition: ease-in-out .75s;
+}
+
+.mobile_nav_btn {
+    background-color: none;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+.mobile_nav_menu {
+    position: absolute;
+    left: 0;
+    top: 25px;
+    background-color: var(--primary-color);
+    z-index: -99999999;
+    transform: translateY(-300px);
+    transition: ease-in-out .75s;
+    width: 100%;
+    margin-left: auto
+}
+
+.active {
+    transform: translateY(50px);
+}
+
+.line1 .line_active {
+    transform: translateY(-60px);
+}
+
+.mobile_nav_content {
+    text-align: center;  
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile_nav_content_link {
+    text-decoration: none;
+    color: white;
+    padding: 2rem;
+}
+
+.anchor {
+    text-decoration: none;
+    color: black;
+}
+
+.anchor:hover {
+    opacity: .5;
+}
+
+span.material-icons-outlined {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 30%;
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+
+.hours-title {
+    padding: 3rem;
+    font-family: 'Lobster', cursive;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.hours-title p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.hours-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 1.15rem;
+    width: 600px;
+    max-width: 90%;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
+    margin: auto;
+    margin-bottom: 6rem;
+}
+
+.hours-table thead tr {
+    background-color: lightskyblue;
+}
+
+.our-story {
+    padding: 3rem 0;
+}
+
+.story_text {
+    text-align: center;
+    margin: auto;
+    padding: 1rem;
+}
+
+.hours-table th,
+.hours-table td {
+    padding: 10px;
+    text-align: left;
+}
+
+.hours-table tbody tr:nth-child(odd) {
+    background-color: rgb(224, 243, 255);
+}
+
+.left-align {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.team {
+    background-color: var(--primary-color);
+    margin-top: 5rem;
+    padding: 2rem;
+}
+
+.team_subheader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+    color: white;
+    text-align: center;
+}
+
+.team_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.team_img {
+    object-fit: cover;
+    width: 100%;
+    height: 400px;
+    border-radius: 5px;
+}
+
+.team_item {
+    width: 400px;
+    margin: 1rem;
+}
+
+.team_text {
+    color: rgb(255, 255, 255);
+    padding: 2rem 1rem;
+    line-height: 1.5rem;
+    text-align: center;
+}
+
+.dino,
+.gaby,
+.dan {
+    font-family: 'Lobster', cursive;
+    font-size: 3rem;
+    padding: 2rem;
+    margin-top: -1rem;
+    color: lightskyblue;
+}
+
+.team_title {
+    font-family: 'Lobster', cursive;
+    font-size: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1.25rem;
+    text-align: center;
+    color: white;
+}
+
+.our-story {
+    margin: auto;
+}
+
+.story_title {
+    font-family: 'Lobster', cursive;
+    font-size: 3rem;
+    text-align: center;
+    margin: auto;
+    padding: 2rem 0;
+}
+
+.story-para > * {
+    text-align: center;
+    padding: 1rem;
+    margin: auto;
+}
+
+.story-para {
+    max-width: 90%;
+    width: 600px;
+}
+
+.story_text p {
+    width: 800px;
+}
+
+.story_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+}
+
+
+.story_img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.papa-balzano {
+    height: 300px;
+    width: 300px;
+    max-width: 90%;
+    border-radius: 50%;
+}
+
+
+.footer {
+    background-color: var(--primary-color);
+    padding-top: 2rem;
+}
+
+.footer_content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    line-height: 2rem;
+    color: white;
+}
+
+.sub_footer {
+    border-top: solid .5px white;
+    width: 95%;
+    margin: auto;
+    padding: 2rem 0rem;
+    font-size: .65rem;
+    color: white;
+    text-align: center;
+}
+
+.dinos_logo {
+    width: 225px;
+    margin-bottom: 30px;
+}
+
+.footer_anchor {
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+}
+
+.footer_anchor:hover {
+    color: lightgreen;
+}
+
+.footer-social-links {
+    margin-bottom: 20px;
+}
+
+.footer-social-links a {
+    text-decoration: none;
+    font-size: 1.25rem;
+    margin: 5px;
+    color: white;
+}
+
+.footer-social-links a:hover {
+    opacity: .5;
+}
+
+
+
+@media (max-width: 1920px) {
+    .mobile_nav_btn {
+        display: none;
+    }
+
+    .tertiary_nav {
+        display: none;
+    }
+    
+    .mobile_nav_menu {
+        display: none;
+    }
+    
+    .active {
+        display: none;
+    }
+}
+
+@media (max-width: 1800px) {
+    .nav_content {
+        padding: 1rem;
+    }
+
+    .hero_container {
+       margin: 0rem 1rem 0rem 1rem;
+       height: 88vh;
+    }
+}
+
+@media (max-width: 600px) {
+    .secondary_nav {
+        display: none;
+    }
+
+    .mobile_nav_btn {
+        display: flex;
+    }
+
+    .mobile_nav_menu {
+        display: flex;
+    }
+
+    .nav_content {
+        padding: 1rem;
+    }
+
+    .call-button {
+        display: flex;
+    }
+
+    .before {
+        left: 1%;
+    }
+    
+    .next {
+        right: 1%;
+    }
+
+    .mobile-title {
+        font-size: 2.5rem;
+    }
+
+    .hero_title {
+        line-height: 3rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .book-button {
+        margin-top: -10px;
+    }
+ 
+
+}
+
+
+
