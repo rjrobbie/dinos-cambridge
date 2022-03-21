@@ -37,6 +37,11 @@
     font-size: 2.5rem;
 }
 
+.primary_nav a {
+    text-decoration: none;
+    color: black;
+}
+
 .nav_content {
     width: 1400px;
     display: flex;
@@ -211,6 +216,7 @@ span.material-icons-outlined {
 
 .hero {
     padding-top: 5rem;
+    height: 100vh;
 }
 
 
