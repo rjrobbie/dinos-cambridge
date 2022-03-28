@@ -233,7 +233,7 @@ span.material-icons-outlined {
 }
 
 .hero_container {
-    background: url('Hero\ Image.jpg');
+    background: url(Hero\ Image.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
