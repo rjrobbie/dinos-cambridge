@@ -188,7 +188,7 @@
 }
 
 .service-table thead tr {
-    background-color: lightskyblue;
+    background-color: rgba(128, 128, 128, 0.295);
     
 }
 
@@ -199,7 +199,7 @@
 }
 
 .service-table tbody tr:nth-child(even) {
-    background-color: rgb(224, 243, 255);
+    background-color: rgba(128, 128, 128, 0.134);
 }
 
 .table-footer {

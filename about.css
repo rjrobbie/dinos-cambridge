@@ -201,7 +201,7 @@ span.material-icons-outlined {
 }
 
 .hours-table thead tr {
-    background-color: lightskyblue;
+    background-color: grey;
 }
 
 .our-story {
@@ -221,7 +221,7 @@ span.material-icons-outlined {
 }
 
 .hours-table tbody tr:nth-child(odd) {
-    background-color: rgb(224, 243, 255);
+    background-color: rgba(128, 128, 128, 0.295);
 }
 
 .left-align {
@@ -277,7 +277,7 @@ span.material-icons-outlined {
     font-size: 3rem;
     padding: 2rem;
     margin-top: -1rem;
-    color: lightskyblue;
+    color: rgb(193, 193, 193);
 }
 
 .team_title {
