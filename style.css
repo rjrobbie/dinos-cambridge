@@ -690,7 +690,7 @@ span.material-icons {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .secondary_nav {
         display: none;
     }
@@ -734,6 +734,7 @@ span.material-icons {
  
 
 }
+
 
 
 

@@ -427,7 +427,7 @@ span.material-icons-outlined {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .secondary_nav {
         display: none;
     }
@@ -469,6 +469,19 @@ span.material-icons-outlined {
         margin-top: -10px;
     }
  
+
+}
+
+@media (max-width: 400px) {
+    .hours-title,
+    .story_title  {
+        font-size: 2rem;
+        padding: 3rem 0rem;
+    }
+
+    .hours-table {
+        max-width: 300px;
+    }
 
 }
 
