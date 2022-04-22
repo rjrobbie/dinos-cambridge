@@ -355,9 +355,9 @@
 
 }
 
-@media (max-width: 400px) {
+@media (max-width: 411px) {
     .service-table {
-        max-width: 300px;
+        max-width: 350px;
     }
 
 }

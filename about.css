@@ -472,10 +472,10 @@ span.material-icons-outlined {
 
 }
 
-@media (max-width: 400px) {
+@media (max-width: 375px) {
     .hours-title,
     .story_title  {
-        font-size: 2rem;
+        font-size: 1.5rem;
         padding: 3rem 0rem;
     }
 
@@ -487,3 +487,17 @@ span.material-icons-outlined {
 
 
 
+@media (max-width: 411px) {
+     .hours-title {
+        font-size: 2.25rem;
+    }
+
+    .hours-table {
+        max-width: 350px;
+    }
+
+    .story_title {
+        font-size: 2rem;
+    }
+
+}
